@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart City Dashboard — Blue & White (with Charts)</title>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">SC</div>
+        <div class="title">
+          <h1>Smart City Dashboard</h1>
+          <p>Blue & White theme — weather · AQI · traffic · charts</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="status-pill">
+          <span style="width:10px;height:10px;background:#10b981;border-radius:50%;display:inline-block"></span>
+          All Systems Operational
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+      <div class="search card">
+        <select id="citySelect">
+          <option value="">Select city</option>
+          <option>Delhi</option>
+          <option>Mumbai</option>
+          <option>Bengaluru</option>
+          <option>Chennai</option>
+          <option>Kolkata</option>
+          <option>London</option>
+          <option>New York</option>
+        </select>
+
+        <input id="cityInput" placeholder="Type a city" />
+        <button id="searchBtn" class="btn">Search</button>
+        <button id="unitsToggle" class="btn ghost small">°C / °F</button>
+      </div>
+
+      <div style="margin-left:auto;display:flex;gap:8px">
+        <button id="geoBtn" class="btn ghost small">Use My Location</button>
+        <button id="refreshBtn" class="btn small">Refresh</button>
+      </div>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid">
+      <!-- LEFT SIDEBAR -->
+      <div class="sidebar">
+        <div class="card"><h4>Temperature (°C)</h4><canvas id="tempChart"></canvas></div>
+        <div class="card"><h4>Humidity (%)</h4><canvas id="humidityChart"></canvas></div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div>
+        <div class="subgrid">
+          <div class="card" id="weatherCard">
+            <h3>Weather</h3>
+            <div class="weather-main">
+              <div class="weather-left">
+                <div class="avatar blue" id="weatherIcon">°</div>
+                <div>
+                  <div id="weatherCity" class="strong">—</div>
+                  <div id="weatherSummary" class="muted">—</div>
+                </div>
+              </div>
+
+              <div class="weather-right">
+                <div id="tempValue" class="big">--°</div>
+                <div class="muted" id="tempRange">H: -- L: --</div>
+              </div>
+            </div>
+
+            <div class="small weather-details">
+              <div>Humidity: <strong id="humidityVal">--%</strong></div>
+              <div>Wind: <strong id="windVal">-- m/s</strong></div>
+              <div>Pressure: <strong id="pressVal">-- hPa</strong></div>
+            </div>
+          </div>
+
+          <div class="card" id="aqiCard">
+            <h3>Air Quality</h3>
+            <div id="aqiContent">
+              <div class="muted">PM2.5</div>
+              <div class="big" id="pm25Val">--</div>
+              <div class="muted" id="aqiStatus">—</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Forecast (next 12 hours)</h3>
+          <canvas id="forecastChart"></canvas>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <div class="sidebar">
+        <div class="card"><h4>Rain (mm)</h4><canvas id="rainChart"></canvas></div>
+        <div class="card"><h4>PM2.5</h4><canvas id="pmChart"></canvas></div>
+        <div class="card"><h3>Quick Chart</h3><canvas id="barChart"></canvas></div>
+      </div>
+    </div>
+
+    <footer>Smart City Dashboard © 2025 — Demo</footer>
+  </div>
+
+  <!-- External JS -->
+  <script src="charts.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
