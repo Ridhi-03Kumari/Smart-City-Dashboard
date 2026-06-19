@@ -1,49 +1,49 @@
-# 🌆 Smart City Dashboard
+# Smart City Dashboard
 
 A real-time Smart City Analytics Dashboard that visualizes key urban metrics including weather conditions, air quality, rainfall, humidity, temperature, and environmental insights using public APIs and interactive charts.
 
-## 🚀 Live Demo
+##  Live Demo
 
 🔗 https://ridhi-03kumari.github.io/Smart-City-Dashboard/
 
 ---
 
-## 📌 Features
+##  Features
 
-### 🌤 Real-Time Weather Monitoring
+###  Real-Time Weather Monitoring
 - Current temperature
 - Humidity
 - Wind speed
 - Atmospheric pressure
 - Weather conditions
 
-### 🌫 Air Quality Analysis
+###  Air Quality Analysis
 - PM2.5 monitoring
 - Air quality status indicators
 - Environmental insights
 
-### 🌧 Rainfall Tracking
+###  Rainfall Tracking
 - Rain forecasts
 - Rainfall visualizations
 
-### 📈 Interactive Charts
+###  Interactive Charts
 - Temperature trends
 - Humidity trends
 - Rainfall trends
 - Forecast analytics
 
-### 📍 Location Support
+###  Location Support
 - Search by city
 - Use current location
 - Dynamic weather updates
 
-### 🔄 Live Updates
+###  Live Updates
 - Automatic data refresh
 - Real-time API integration
 
 ---
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 ### Frontend
 - HTML5
@@ -62,7 +62,7 @@ A real-time Smart City Analytics Dashboard that visualizes key urban metrics inc
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 Smart-City-Dashboard/
@@ -76,7 +76,7 @@ Smart-City-Dashboard/
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 The goal of this project is to create a centralized dashboard that enables users to monitor key smart-city indicators through an intuitive and interactive interface.
 
@@ -90,7 +90,7 @@ The dashboard demonstrates:
 
 ---
 
-## 🌐 Deployment
+##  Deployment
 
 This project is deployed using GitHub Pages.
 
@@ -100,7 +100,7 @@ https://ridhi-03kumari.github.io/Smart-City-Dashboard/
 
 ---
 
-## 👩‍💻 Contributors
+##  Contributors
 
 - Ridhi Kumari
 - Binayak
@@ -108,6 +108,6 @@ https://ridhi-03kumari.github.io/Smart-City-Dashboard/
 
 ---
 
-## 📄 License
+##  License
 
 This project is intended for educational and portfolio purposes.
