@@ -1,164 +1,113 @@
-# Smart-City-Dashboard
+# 🌆 Smart City Dashboard
 
-A real-time visualization dashboard that displays key smart-city metrics such as temperature, humidity, rainfall, wind speed, and air quality using open public APIs.
-The dashboard is interactive, responsive, and uses Chart.js for data visualization which makes it clear to view for any individual.
+A real-time Smart City Analytics Dashboard that visualizes key urban metrics including weather conditions, air quality, rainfall, humidity, temperature, and environmental insights using public APIs and interactive charts.
 
-Objective
+## 🚀 Live Demo
 
-To build a Smart City Data Dashboard that:
+🔗 https://ridhi-03kumari.github.io/Smart-City-Dashboard/
 
-Fetches real-time or publicly available open data from any smart city in the world.
+---
 
-Uses open APIs to display metrics such as:
+## 📌 Features
 
-Temperature
+### 🌤 Real-Time Weather Monitoring
+- Current temperature
+- Humidity
+- Wind speed
+- Atmospheric pressure
+- Weather conditions
 
-Humidity
+### 🌫 Air Quality Analysis
+- PM2.5 monitoring
+- Air quality status indicators
+- Environmental insights
 
-Rainfall
+### 🌧 Rainfall Tracking
+- Rain forecasts
+- Rainfall visualizations
 
-Wind speed
+### 📈 Interactive Charts
+- Temperature trends
+- Humidity trends
+- Rainfall trends
+- Forecast analytics
 
-Air quality (PM2.5, AQI)
+### 📍 Location Support
+- Search by city
+- Use current location
+- Dynamic weather updates
 
-Parses and processes this data.
+### 🔄 Live Updates
+- Automatic data refresh
+- Real-time API integration
 
-Visualizes the data using interactive charts and graphs with plottings.
+---
 
-Presents meaningful insights through an intuitive dashboard interface.
+## 🛠 Technologies Used
 
-Features
-Real-Time Data Fetching
+### Frontend
+- HTML5
+- CSS3
+- JavaScript (ES6)
 
-Uses Open-Meteo open APIs to fetch weather and air quality data in real time.
+### Visualization
+- Chart.js
 
-Supported Cities
+### APIs
+- Weather API
+- Air Quality API
 
-The dashboard includes eight cities by default:
+### Deployment
+- GitHub Pages
 
-Bengaluru
+---
 
-Delhi
+## 📂 Project Structure
 
-Kolkata
-
-Singapore
-
-London
-
-New York
-
-Madrid
-
-Barcelona
-
-(More cities can be added easily….if you want to merge or raise pull request….!!!)
-
-Dynamic Charts
-
-The dashboard displays five charts:
-
-Temperature (Line chart)
-
-Rainfall (Bar chart)
-
-Humidity (Line chart)
-
-PM2.5 Air Quality (Line chart, includes AQI category)
-
-Wind Speed (Line chart)
-
-AQI Color Indicator
-
-The PM2.5 card automatically changes color based on AQI safety levels.
-
-Modern User Interface
-
-Clean and minimal design
-
-Glassmorphism styling
-
-Responsive grid layout
-
-Smooth interactions and chart animations
-
-Simple Setup
-
-The project works on all browsers without any backend.
-Only HTML, CSS, JavaScript, Chart.js, and Open-Meteo APIs are used which has been integrated.
-
-Tech Stack
-Component	Technology
-Frontend	HTML, CSS, JavaScript
-Charts	Chart.js
-APIs	Open-Meteo Weather API, Open-Meteo Air Quality API
-Styling	CSS Flexbox, CSS Grid, Glassmorphism
-APIs Used
-1. Open-Meteo Weather API
-
-Provides real-time:
-
-Temperature
-
-Humidity
-
-Rainfall
-
-Wind Speed
-
-Example request:
-
-https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true&hourly=temperature_2m,precipitation,relativehumidity_2m,windspeed_10m
-
-2. Open-Meteo Air Quality API
-
-Provides PM2.5 concentrations and AQI-related health categories.
-
-Example request:
-
-https://air-quality-api.open-meteo.com/v1/air-quality?latitude={lat}&longitude={lon}&hourly=pm2_5
-
-
-Both APIs are free and require no API key.
-
-Installation and Usage
-1. Clone the Repository
-git clone https://github.com/your-username/smart-city-dashboard.git
-cd smart-city-dashboard
-
-2. Run the Project
-
-Simply open index.html in any browser.
-No additional setup is required.
-
-Project Structure
-smart-city-dashboard/
+```text
+Smart-City-Dashboard/
 │
-├── index.html      # Full dashboard with UI, charts, and API logic
-└── README.md       # Project documentation
+├── index.html
+├── style.css
+├── app.js
+├── charts.js
+├── README.md
+```
 
-Screenshots
+---
 
-(Add your dashboard screenshots after uploading the project)
+## 🎯 Project Objectives
 
-![Dashboard Screenshot](images/dashboard.png)
+The goal of this project is to create a centralized dashboard that enables users to monitor key smart-city indicators through an intuitive and interactive interface.
 
-Future Enhancements
+The dashboard demonstrates:
 
-Add traffic congestion data
+- API Integration
+- Data Visualization
+- Frontend Development
+- Real-Time Analytics
+- Responsive UI Design
 
-Add energy consumption and smart grid insights
+---
 
-Include waste management tracking
+## 🌐 Deployment
 
-Add a live map view using Leaflet
+This project is deployed using GitHub Pages.
 
-City comparison tools
+Live Site:
 
-Auto-refresh every defined interval
+https://ridhi-03kumari.github.io/Smart-City-Dashboard/
 
-Dark mode support
+---
 
-License
+## 👩‍💻 Contributors
 
-This project is licensed under the MIT License.
+- Ridhi Kumari
+- Binayak
+- Rituraj
+
+---
+
+## 📄 License
+
+This project is intended for educational and portfolio purposes.
